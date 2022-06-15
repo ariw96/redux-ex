@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { FaSignInAlt } from "react-icons/fa";
 import { useSelector, useDispatch } from "react-redux";
 import Spinner from "../components/Spinner";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { login, reset } from "../features/auth/authSlice";
 
@@ -76,7 +76,6 @@ function Login() {
 							onChange={onChange}
 						/>
 					</div>
-
 					<button type="submit" className="btn btn-block">
 						Submit
 					</button>
